@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spot the difference</title>
+    
+</head>
+<body style="position:relative; display: flex; align-items: center;">
+    <img id="main_img" src="images/star.jpg" style="height: 40vw; display: inline-block;">
+    <button id="button-1" style="height: 3vw; margin-left: 2vw;" onclick="change_img()">Change Image</button>
+    <button id = "button-2" style="height: 3vw; margin-left: 2vw;" onclick="revert_img()">Revert Image</button>
+    <script>
+        function change_img() {
+            main_img.src="images/hamster.jpg";
+        };
+        
+        function revert_img() {
+            main_img.src ="images/star.jpg";
+        };
+    </script>
+</body>
+</html>
